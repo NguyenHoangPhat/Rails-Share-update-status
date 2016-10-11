@@ -52,7 +52,7 @@ Quy trình sử dụng [GIT Workflow](https://www.atlassian.com/git/tutorials/co
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](sign up.gif, create my account.gif)
+![Video Walkthrough](signup.gif, createmyaccount.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
