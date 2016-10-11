@@ -1,6 +1,9 @@
 class User < ApplicationRecord
   has_many :microposts
+<<<<<<< HEAD
   attr_accessor :remember_token
+=======
+>>>>>>> 13f75584ba87badf2fc722dda23f7741b6e93fc0
   before_save { email.downcase! }
   validates :name, length: { maximum: 20 }, presence: true	
 
@@ -18,6 +21,7 @@ class User < ApplicationRecord
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
  end
+<<<<<<< HEAD
 
    # Returns a random token.
   def User.new_token
@@ -40,4 +44,6 @@ class User < ApplicationRecord
   def forget
     update_attribute(:remember_digest, nil)
   end
+=======
+>>>>>>> 13f75584ba87badf2fc722dda23f7741b6e93fc0
 end

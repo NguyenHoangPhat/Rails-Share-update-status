@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161011142422) do
+=======
+ActiveRecord::Schema.define(version: 20161011085713) do
+>>>>>>> 13f75584ba87badf2fc722dda23f7741b6e93fc0
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,7 +32,10 @@ ActiveRecord::Schema.define(version: 20161011142422) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.string   "password_digest"
+<<<<<<< HEAD
     t.string   "remember_digest"
+=======
+>>>>>>> 13f75584ba87badf2fc722dda23f7741b6e93fc0
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
   end
 
