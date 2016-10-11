@@ -3,8 +3,6 @@ module SessionsHelper
   def log_in(user)
     session[:user_id] = user.id
   end
-
-<<<<<<< HEAD
    # Remembers a user in a persistent session.
   def remember(user)
     user.remember
@@ -25,8 +23,6 @@ module SessionsHelper
     end 
   end
 
-=======
->>>>>>> 13f75584ba87badf2fc722dda23f7741b6e93fc0
   # Returns the current logged-in user (if any).
   def current_user
     @current_user ||= User.find_by(id: session[:user_id])
@@ -42,7 +38,6 @@ module SessionsHelper
     session.delete(:user_id)
     @current_user = nil
   end
-<<<<<<< HEAD
 
     # Forgets a persistent session.
   def forget(user)
@@ -58,6 +53,4 @@ module SessionsHelper
     @current_user = nil
   end
 end
-=======
-end
->>>>>>> 13f75584ba87badf2fc722dda23f7741b6e93fc0
+
