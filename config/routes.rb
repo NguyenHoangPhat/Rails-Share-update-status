@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   
   resources :microposts
   resources :users
+
+  get  '/signup',  to: 'users#new'
+
 end
