@@ -10,8 +10,7 @@ class ActiveSupport::TestCase
   def is_logged_in?
     !session[:user_id].nil?
   end
-
-<<<<<<< HEAD
+  
 # Log in as a particular user.
   def log_in_as(user)
     session[:user_id] = user.id
@@ -28,6 +27,3 @@ class ActionDispatch::IntegrationTest
                                           remember_me: remember_me } }
   end
 end
-=======
-end
->>>>>>> 13f75584ba87badf2fc722dda23f7741b6e93fc0
